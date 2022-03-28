@@ -20,10 +20,10 @@ cd Grid2LatLon
 ```
 You can run the application using docker-compose, docker or as a python application, each detailed below.
 
-For each of the methods below the app will be running at [localhost:8080](http://localhost:8080/).
+For each of the methods below the app will be running at [localhost:8080](http://localhost:8080/grid2latlon).
 
 ### Using docker-compose.yml
-If you have both [docker](https://www.docker.com/get-started) and [docker-compose](http://localhost:8080/) installed then:
+If you have both [docker](https://www.docker.com/get-started) and [docker-compose](http://localhost:8080/grid2latlon) installed then:
 ```
 docker-compose up -d
 ```

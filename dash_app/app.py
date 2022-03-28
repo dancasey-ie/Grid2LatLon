@@ -96,6 +96,7 @@ def latlon2xy(lat, lon):
     return x, y
 
 app = dash.Dash(__name__,
+                url_base_pathname="/grid2latlon/",
                 meta_tags=[{"name": "viewport",
                 "content": "width=device-width, initial-scale=1"}],
                 external_stylesheets=[dbc.themes.BOOTSTRAP,
