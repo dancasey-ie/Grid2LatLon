@@ -81,6 +81,19 @@ def create_layout(app):
                 "Helpful tool to convert between some of the different coordinate systems used in Ireland.",
                 className='text-center'
                     ),
+            html.P(
+                [
+                    '"Hi there I hope you find this app useful. Just letting you know that this app is not actively maintained. It has been working away for the past few years and I will happily keep it live as people seem to find it useful. Be patient if you are converting many points.',
+                    " The underlying code can be found on  ",
+                    html.A("Github", href="https://github.com/dancasey-ie/Grid2LatLon", target="_blank"),
+                    ". For converting anything other that Irish Grid coordinates with the leading letter, check out my ",
+                    html.A("batch-coordinate-converter", href="https://dancasey.ie/batch-coordinate-converter/", target="_blank"), " app.",
+                    '" - ',
+                    html.A("Dan Casey", href="https://dancasey.ie", target="_blank"),
+                    " (May 2024)"
+                ],
+                className='text-center'
+            ),
             dbc.Row(children=[
                 dbc.Col(
                     className="col-12 col-md-6 col-lg-3 mt-4",
