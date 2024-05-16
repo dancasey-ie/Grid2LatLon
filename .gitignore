@@ -12,3 +12,4 @@ share/
 *env.py
 data
 certbot/
+*env/*

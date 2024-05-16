@@ -81,14 +81,30 @@ def create_layout(app):
                 "Helpful tool to convert between some of the different coordinate systems used in Ireland.",
                 className='text-center'
                     ),
-            html.P(
-                [
-                    '"Hi there I hope you find this app useful. Just letting you know that this app is not actively maintained. It has been working away for the past few years and I will happily keep it live as people seem to find it useful. Be patient if you are converting many points.',
-                    " The underlying code can be found on  ",
-                    html.A("Github", href="https://github.com/dancasey-ie/Grid2LatLon", target="_blank"),
-                    ". For converting anything other that Irish Grid coordinates with the leading letter, check out my ",
-                    html.A("batch-coordinate-converter", href="https://dancasey.ie/batch-coordinate-converter/", target="_blank"), " app.",
-                    '" - ',
+            html.P(children=[
+                    'Hi there I hope you find this app useful. Just a few comments before you start playing:',
+                    html.B(),
+                    html.Ul(
+                        className="text-left",
+                        children=[
+                       html.Li("This is an old project that I do not actively maintain but am happy to keep alive as people seem to be using it."),
+                       html.Li(children=[
+                            "Be patient if you are converting multiple points. It is slow and optimization is not on my priority list.",
+                       ]),
+                        html.Li(children=[
+                            "For converting anything other that Irish Grid coordinates (with the leading letter), check out my ",
+                            html.A("batch-coordinate-converter", href="https://dancasey.ie/batch-coordinate-converter/", target="_blank"),
+                            " app. Its way faster!"
+                       ]),
+                       html.Li(children=[
+                            "The underlying code can be found on  ",
+                            html.A("Github", href="https://github.com/dancasey-ie/Grid2LatLon", target="_blank"),
+                            "."
+                       ]),
+                       html.Li(children=[
+                            "Please reach out if you would like further development. Its great to here from those that use this as part of their work flow. ",
+                       ]),]),
+                    ' - ',
                     html.A("Dan Casey", href="https://dancasey.ie", target="_blank"),
                     " (May 2024)"
                 ],

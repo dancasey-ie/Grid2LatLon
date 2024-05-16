@@ -37,8 +37,8 @@ docker run -it -p 8080:8080 -e MAPBOX_TOKEN=${MAPBOX_TOKEN} --name grid2latlon g
 ### Using Python (venv)
 
 ```
-python3 -m venv .
-source bin/activate
+python -m venv ./env
+source env/bin/activate # for windows: env/Scripts/activate
 pip install -r dash_app/requirements.txt
 python dash_app/app.py
 
